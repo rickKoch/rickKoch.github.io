@@ -1,0 +1,43 @@
+baseURL = "https://rickkoch.github.io"
+languageCode = "en-us"
+title = "RickKoch"
+theme = "archie"
+copyright = ""
+pygmentsstyle = "monokai"
+pygmentscodefences = true
+pygmentscodefencesguesssyntax = true
+paginate = 4
+
+[params]
+favicon = "https://avatars.githubusercontent.com/u/54991063?s=400&u=fe634367778346de676ba62d5cdfd3d518d32760&v=4"
+og_image = "https://avatars.githubusercontent.com/u/54991063?s=400&u=fe634367778346de676ba62d5cdfd3d518d32760&v=4"
+# mode = "auto"
+mode = "toggle"
+useCDN = true
+subtitle = "Minimal and Clean [blog theme for Hugo](https://github.com/athul/archie)"
+description = "Archie is a Minimal and Clean theme for Hugo"
+
+[[params.social]]
+name = "GitHub"
+icon = "github"
+url = "https://github.com/rickKoch"
+
+[[menu.main]]
+name = "Home"
+url = "/"
+weight = 1
+
+[[menu.main]]
+name = "All posts"
+url = "/posts"
+weight = 2
+
+[[menu.main]]
+name = "About"
+url = "/about"
+weight = 3
+
+[[menu.main]]
+name = "Tags"
+url = "/tags"
+weight = 4
