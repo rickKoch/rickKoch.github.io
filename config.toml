@@ -1,7 +1,7 @@
 baseURL = "https://rickkoch.github.com"
 languageCode = "en-us"
-title = "RickKoch"
-theme="archie"
+title = "Risto Kochev"
+# theme="archie"
 copyright = "© rick"
 pygmentsstyle = "monokai"
 pygmentscodefences = true
@@ -9,7 +9,7 @@ pygmentscodefencesguesssyntax = true
 [params]
 	mode="auto"
 	useCDN=false
-	subtitle = "hello world!"
+	subtitle = "A place to share my thoughts."
 
 [[params.social]]
 name = "GitHub"
@@ -20,11 +20,6 @@ url = "https://github.com/rickKoch"
 name = "Twitter"
 icon = "twitter"
 url = "https://x.com/itsRickKoch/"
-
-[[params.social]]
-name = "GitLab"
-icon = "gitlab"
-url = "https://gitlab.com/rickKoch/"
 
 [[menu.main]]
 name = "Home"
