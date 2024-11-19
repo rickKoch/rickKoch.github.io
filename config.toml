@@ -1,16 +1,16 @@
-baseURL = "https://rickkoch.github.io"
+baseURL = "https://rickkoch.github.io/"
 languageCode = "en-us"
-title = "RickKoch"
+title = "Risto Kochev"
 theme = "archie"
-copyright = ""
+copyright = "© rick"
 pygmentsstyle = "monokai"
 pygmentscodefences = true
 pygmentscodefencesguesssyntax = true
 paginate = 4
 
 [params]
-favicon = "https://avatars.githubusercontent.com/u/54991063?s=400&u=fe634367778346de676ba62d5cdfd3d518d32760&v=4"
-og_image = "https://avatars.githubusercontent.com/u/54991063?s=400&u=fe634367778346de676ba62d5cdfd3d518d32760&v=4"
+favicon = "https://img.icons8.com/officel/16/000000/chevron-right.png"
+og_image = "https://raw.githubusercontent.com/athul/archie/master/images/archie-dark.png"
 # mode = "auto"
 mode = "toggle"
 useCDN = true
@@ -21,6 +21,16 @@ description = "Archie is a Minimal and Clean theme for Hugo"
 name = "GitHub"
 icon = "github"
 url = "https://github.com/rickKoch"
+
+[[params.social]]
+name = "Twitter"
+icon = "twitter"
+url = "https://x.com/itsRickKoch"
+
+[[params.social]]
+name = "GitLab"
+icon = "gitlab"
+url = "https://gitlab.com/rickkoch/"
 
 [[menu.main]]
 name = "Home"
