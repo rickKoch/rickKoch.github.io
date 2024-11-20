@@ -59,7 +59,7 @@ successfully delivered.
 
 We have four layers in the TCP/IP stack.
 
-![tcp/ip stack](internet_and_protocols.png "TCP/IP Stack")
+![tcp/ip stack](/images/internet_and_protocols.png "TCP/IP Stack")
 
 ### Application Layer
 
