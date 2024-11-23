@@ -27,16 +27,16 @@ being gradually adopted to meet growing demands.
 
 ## How does TCP/IP work?
 
-he TCP/IP stack operates based on a layered architecture, facilitating 
+The TCP/IP stack operates based on a layered architecture, facilitating 
 communication between devices over a network.
 
 ### Client-Server Communication
 
-TCP/IP follows a client-server model, where a client (a user or device) requests 
-a service, such as accessing a webpage, from a server (a computer in the network). 
-The server processes the request and sends back the desired data. For example, 
-when you open a browser and visit a website, your device acts as the client, 
-and the website's hosting server responds to your request.
+TCP/IP follows a client-server model, where a client (a user or device)
+requests a service, such as accessing a webpage, from a server (a computer in
+the network). The server processes the request and sends back the desired data.
+For example, when you open a browser and visit a website, your device acts as
+the client, and the website's hosting server responds to your request.
 
 ### Stateless Protocol Suite
 
@@ -69,37 +69,38 @@ between applications over a network, whether it's browsing the web, sending
 emails, or downloading files.
 
 1. User Interaction:
-- This layer directly interacts with user applications, enabling data exchange 
-between the network and the application software.
+    - This layer directly interacts with user applications, enabling data
+      exchange between the network and the application software.
 2. Protocol-Specific Communication:
-- It provides a set of protocols that define how specific types of data are 
-formatted, transmitted, and interpreted by applications. For example, HTTP for 
-web browsing and SMTP for email.
+    - It provides a set of protocols that define how specific types of data are
+      formatted, transmitted, and interpreted by applications. For example,
+      HTTP for web browsing and SMTP for email.
 3. Data Formatting and Translation:
-- It ensures that the data from applications is formatted properly for 
-transmission over the network and interprets incoming data for applications to 
-use.
+    - It ensures that the data from applications is formatted properly for
+      transmission over the network and interprets incoming data for
+      applications to use.
 4. Authentication and Encryption:
-- Some protocols at this layer provide security features such as authentication 
-of users and encryption of data to ensure safe communication.
+    - Some protocols at this layer provide security features such as
+      authentication of users and encryption of data to ensure safe
+      communication.
 
 #### Key Protocols of the Application Layer
 1. HTTP (Hypertext Transfer Protocol):
-- Used for accessing and transferring web pages over the internet.
-- Secure version: HTTPS adds encryption using TLS/SSL.
+    - Used for accessing and transferring web pages over the internet.
+    - Secure version: HTTPS adds encryption using TLS/SSL.
 2. FTP (File Transfer Protocol):
-- Used for transferring files between devices on a network.
+    - Used for transferring files between devices on a network.
 3. SMTP (Simple Mail Transfer Protocol):
-- Handles sending of emails.
-- Often used alongside POP3 or IMAP for retrieving emails.
+    - Handles sending of emails.
+    - Often used alongside POP3 or IMAP for retrieving emails.
 4. DNS (Domain Name System):
-- Translates human-readable domain names (e.g., www.example.com) into IP 
-addresses.
+    - Translates human-readable domain names (e.g., www.example.com) into IP
+      addresses.
 5. Telnet and SSH:
-- Telnet: Provides text-based remote access to another computer.
-- SSH (Secure Shell): A secure alternative to Telnet for remote access.
+    - Telnet: Provides text-based remote access to another computer.
+    - SSH (Secure Shell): A secure alternative to Telnet for remote access.
 6. SNMP (Simple Network Management Protocol):
-- Used for managing devices on a network, such as routers and switches.
+    - Used for managing devices on a network, such as routers and switches.
 
 #### Role in the TCP/IP Stack
 - The Application Layer sits above the Transport Layer.
@@ -117,42 +118,42 @@ error handling, it ensures that data reaches its destination accurately and
 efficiently.
 
 1. Data Segmentation and Reassembly:
-- The Transport Layer divides large chunks of data from the Application Layer 
-into smaller segments for transmission.
-- At the destination, it reassembles these segments into the original data 
-stream.
+    - The Transport Layer divides large chunks of data from the Application
+      Layer into smaller segments for transmission.
+    - At the destination, it reassembles these segments into the original data
+      stream.
 2. End-to-End Communication:
-- It establishes a connection between the source and destination devices to 
-ensure that data is delivered accurately.
-- This connection can be connection-oriented (e.g., TCP) or connectionless 
-(e.g., UDP).
+    - It establishes a connection between the source and destination devices to
+      ensure that data is delivered accurately.
+    - This connection can be connection-oriented (e.g., TCP) or connectionless
+      (e.g., UDP).
 3. Reliability:
-- Acknowledgments (ACKs): Confirms the successful receipt of data.
-- Retransmission: Resends lost or corrupted data packets.
-- Flow Control: Prevents overwhelming the receiver by regulating the data 
+    - Acknowledgments (ACKs): Confirms the successful receipt of data.
+    - Retransmission: Resends lost or corrupted data packets.
+    - Flow Control: Prevents overwhelming the receiver by regulating the data 
 transfer rate.
 4. Multiplexing and Demultiplexing:
-- Enables multiple applications on a single device to communicate 
-simultaneously by using port numbers. For example, port 80 is used for HTTP and 
-port 443 for HTTPS.
+    - Enables multiple applications on a single device to communicate
+      simultaneously by using port numbers. For example, port 80 is used for
+      HTTP and port 443 for HTTPS.
 5. Error Detection and Recovery:
-- Detects errors in transmitted data and ensures corrections are made, either 
-by retransmission or through built-in error-checking mechanisms.
+    - Detects errors in transmitted data and ensures corrections are made,
+      either by retransmission or through built-in error-checking mechanisms.
 
 #### Key Protocols of the Transport Layer
 
 1. TCP (Transmission Control Protocol):
-- Connection-oriented: Establishes a virtual connection between sender and 
-receiver.
-- Ensures reliable delivery by providing error correction, acknowledgments, and 
-data sequencing.
-- Suitable for applications requiring high reliability, such as file transfers, 
-emails, and web browsing.
+    - Connection-oriented: Establishes a virtual connection between sender and
+      receiver.
+    - Ensures reliable delivery by providing error correction, acknowledgments,
+      and data sequencing.
+    - Suitable for applications requiring high reliability, such as file
+      transfers, emails, and web browsing.
 2. UDP (User Datagram Protocol):
-- Connectionless: Sends data without establishing a connection.
-- Does not guarantee delivery, making it faster but less reliable.
-- Used in applications where speed is more critical than reliability, such as 
-live streaming, gaming, and DNS lookups.
+    - Connectionless: Sends data without establishing a connection.
+    - Does not guarantee delivery, making it faster but less reliable.
+    - Used in applications where speed is more critical than reliability, such
+      as live streaming, gaming, and DNS lookups.
 
 #### Role in the TCP/IP Stack
 - The Transport Layer operates between the Application Layer (above) and the 
